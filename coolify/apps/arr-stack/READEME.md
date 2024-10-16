@@ -22,3 +22,6 @@
 │   └── tv
 └── torrents
 ```
+
+_ps: make sure to enable `Connect To Predefined Network` in the `configuration`
+menu on Coolify so these services can talk to each other_
