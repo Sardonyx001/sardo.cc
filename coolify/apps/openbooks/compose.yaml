@@ -1,0 +1,9 @@
+services:
+  openbooks:
+    container_name: openbooks
+    image: "evanbuss/openbooks:edge"
+    command: "./openbooks server --dir /books --port 5656 --persist --name ${OPENBOOKS_IRC_USERNAME}"
+    volumes:
+      - "/data/media/books/:/books"
+    environment:
+      - SERVICE_FQDN_BOOKS_5656
